@@ -70,7 +70,7 @@ public class ExplainResultServlet extends HttpServlet {
 		Model model = QueryResultExplainer.explainQueryResult(queryProcessor.getVirtualModel(), queryProcessor.getQuery(), soln);
 		
 		
-	/*	JsonArray res = new JsonArray();
+		JsonArray res = new JsonArray();
 		StmtIterator iter = model.listStatements();
 		while (iter.hasNext()) {
 			Statement stmt = iter.nextStatement(); // get next statement
@@ -86,7 +86,7 @@ public class ExplainResultServlet extends HttpServlet {
 		}
 		System.out.println("RDF/Json result:  "+res);
 		response.getOutputStream().println(new Gson().toJson(res));
-		*/
+		/*
 		JsonArray resArray = new JsonArray();
 		JsonArray a = new JsonArray();
 		JsonObject triples = new JsonObject();
@@ -116,7 +116,7 @@ public class ExplainResultServlet extends HttpServlet {
 		System.out.println("RDF/JSON: ");
 		model.write(System.out, "RDF/JSON");
 		response.getOutputStream().println(new Gson().toJson(resArray));
-		
+		*/
 		}catch(Exception e){
 			e.printStackTrace();
 		}

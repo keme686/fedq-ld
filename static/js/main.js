@@ -264,8 +264,8 @@ $(document).ready(function() {
 			success: function(data, textStatus, jqXHR){
 				console.log(jqXHR.status);
 				console.log(data);
-				//renderExplanation(data);
-				renderExp(data);
+				renderExplanation(data);
+				//renderExp(data);
 			},
 			error: function(jqXHR, textStatus, errorThrown){
 
